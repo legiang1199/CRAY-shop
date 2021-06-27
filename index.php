@@ -6,11 +6,11 @@
     include('database.php');
     $products = [];
     $getCategoriesQuery = "SELECT DISTINCT category FROM product ORDER BY category ASC";
-    $categoryResult = mysqli_query($conn, $getCategoriesQuery);
+    $categoryResult = pg_query($conn, $getCategoriesQuery);
     
     $sql = "SELECT * FROM product";
-    $result = mysqli_query($conn, $sql);
-    while($row = mysqli_fetch_assoc($result)){
+    $result = pg_query($conn, $sql);
+    while($row = pg_fetch_assoc($result)){
         array_push($products, $row);
     };
 ?>
@@ -516,7 +516,7 @@
             </div>
         </div>
         <div class="list-img">
-            <?php  while($categoryName = mysqli_fetch_assoc($categoryResult)) {?>
+            <?php  while($categoryName = pg_fetch_assoc($categoryResult)) {?>
                 <div  class="title-list">  <h1><?php echo $categoryName['category'] ?></h1> </div>
                 <section>
                     <?php foreach($products as $product) { ?>           

@@ -8,7 +8,7 @@
         $price = $_POST['price'];
         
         $sql = "INSERT INTO product (name, image, category, price) VALUES ('$productName', '$image', '$category', '$price')";
-        $result = mysqli_query($conn, $sql);
+        $result = pg_query($conn, $sql);
         header('location: main.php');
     }
 

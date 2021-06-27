@@ -2,8 +2,8 @@
     include('database.php');
     $productId = $_GET['id'];
     $sql = "SELECT * FROM product WHERE id = '$productId'";
-    $result = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_assoc($result);
+    $result = pg_query($conn, $sql);
+    $row = pg_fetch_assoc($result);
 ?>
 
 <!doctype html>

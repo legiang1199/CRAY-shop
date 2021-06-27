@@ -4,6 +4,6 @@
     $id = $_GET['id'];
     $sql = "DELETE FROM product WHERE id='$id'";
 
-    $result = mysqli_query($conn, $sql);
+    $result = pg_query($conn, $sql);
     header('location: main.php');
 ?>

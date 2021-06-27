@@ -12,7 +12,7 @@
         SET name = '$productName', image= '$image', category =' $category', price='$price'
         WHERE id = $id";
 
-        $result = mysqli_query($conn, $sql);
+        $result = pg_query($conn, $sql);
         header('location: main.php');
   
 

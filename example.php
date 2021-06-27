@@ -1,7 +1,7 @@
 <?php 
     include('database.php');
     $sql = "SELECT * FROM product";
-    $result = mysqli_query($conn, $sql);
+    $result = pg_query($conn, $sql);
 ?>
 
 
@@ -15,7 +15,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php while($row = mysqli_fetch_assoc($result)) {?>
+<?php while($row = pg_fetch_assoc($result)) {?>
            
            if(  $row['category'] === 'sale' ) {
             <img src="./img/<?php echo $row['image']?>" alt="img">

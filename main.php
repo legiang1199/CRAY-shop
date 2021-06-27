@@ -1,7 +1,7 @@
 <?php 
     include('database.php');
     $sql = "SELECT * FROM product";
-    $result = mysqli_query($conn, $sql);
+    $result = pg_query($conn, $sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -82,7 +82,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>                             
-                                        <?php while($row = mysqli_fetch_assoc($result)) {?>
+                                        <?php while($row = pg_fetch_assoc($result)) {?>
             <tr>
                 <td><?php echo $row['id']?></td>
                 <td><?php echo $row['name']?></td>

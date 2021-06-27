@@ -12,11 +12,11 @@
 
         if( $password ==  $password1){
             $sql0 = "SELECT * FROM user";
-            $result0 = mysqli_query($conn, $sql0);
-            $row = mysqli_fetch_assoc($result0);
+            $result0 = pg_query($conn, $sql0);
+            $row = pg_fetch_assoc($result0);
             if($row['name'] != $username){
                 $sql = "INSERT INTO user (name, password) VALUES ( '$username', '$password')" ;
-                $result = mysqli_query($conn, $sql);
+                $result = pg_query($conn, $sql);
                 echo '<script language="javascript">alert("Successfully"); window.location="login.php";</script>';
             }
           else{
