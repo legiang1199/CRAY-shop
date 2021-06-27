@@ -18,7 +18,7 @@
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="home.php">C R A Y</a>
+            <a class="navbar-brand" href="index.php">C R A Y</a>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
                 <div class="input-group">
@@ -46,7 +46,7 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <a class="nav-link" href="home.php">
+                            <a class="nav-link" href="index.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div> Home
                             </a>
                             <a class="nav-link collapsed" href="create_product.php"  data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">

@@ -17,6 +17,6 @@ if($count == 0){
 }
 else{
     $_SESSION['login_user'] = $row['name'];
-    header('location: home.php');
+    header('location: index.php');
 }
 ?>
