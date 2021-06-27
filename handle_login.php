@@ -3,9 +3,9 @@ session_start();
 include 'database.php';
 $username = $_POST['username'];
 $password = $_POST['password']; 
-$sql = "SELECT * FROM user where name = '$username' AND password ='$password' ";
+$pg = "SELECT * FROM user where name = '$username' AND password ='$password' ";
 
-$result = pg_query($conn, $sql);
+$result = pg_query($conn, $pg);
 //var_dump($result);
 //die();
 $count = pg_num_rows($result);
