@@ -13,7 +13,7 @@
         WHERE id = $id";
 
         $result = pg_query($conn, $sql);
-        header('location: main.php');
+        header('location: index.php');
   
 
 ?>

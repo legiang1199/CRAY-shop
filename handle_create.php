@@ -9,7 +9,7 @@
         
         $sql = "INSERT INTO product (name, image, category, price) VALUES ('$productName', '$image', '$category', '$price')";
         $result = pg_query($conn, $sql);
-        header('location: main.php');
+        header('location: index.php');
     }
 
 ?>
