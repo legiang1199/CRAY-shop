@@ -36,7 +36,8 @@
                 <br>
             <label for="cars">Choose category:</label>
             <select name="category" id="cars">
-                <option value="Tee">Tee</option>
+                <option value="T-Shirt">T-Shirt</option>
+                <option value="Trousers">Trousers</option>
             </select>
             </div>
             <div class="form-group">
