@@ -39,7 +39,7 @@
                             </a>
                             <a class="nav-link collapsed" href="create_product.php"  data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Create New product
+                                New product
                             </a>
                         </div>
                     </div>
